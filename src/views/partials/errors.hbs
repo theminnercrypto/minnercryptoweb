@@ -1,0 +1,27 @@
+{{#if error }}
+<div class="alert alert-warning" role="alert">
+          <div class="container">
+            <div class="alert-icon">
+              <i class="now-ui-icons ui-1_bell-53"></i>
+            </div>
+            <strong>¡Hey!</strong> {{error}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+{{/if}}
+
+{{#each errors}}
+  <div class="alert alert-danger" role="alert">
+          <div class="container">
+            <div class="alert-icon">
+              <i class="now-ui-icons objects_support-17"></i>
+            </div>
+            <strong>¡Oh no!...</strong> {{text}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+{{/each}}
